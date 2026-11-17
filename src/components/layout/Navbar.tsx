@@ -33,8 +33,8 @@ export default function Navbar() {
       <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <button onClick={() => scrollTo('hero')} aria-label="Adil Abbasov — back to top">
-          {/* 28px tall; width follows the logo's 859×358 shape */}
-          <Image src="/logo.svg" alt="" width={67} height={28} priority className="h-7 w-auto" />
+          {/* 32px tall; width follows the logo's 856×355 shape */}
+          <Image src="/logo.svg" alt="" width={77} height={32} priority className="h-8 w-auto" />
         </button>
 
         {/* Desktop nav */}
