@@ -1,16 +1,17 @@
 export const personal = {
   name: 'Adil Abbasov',
-  role: 'Full-Stack .NET Developer',
-  tagline: 'Building robust enterprise systems with .NET and modern web technologies.',
+  role: 'Backend .NET Developer',
+  tagline: 'Building secure, large-scale backend systems with C#, ASP.NET Core and modern .NET.',
   location: 'Baku, Azerbaijan',
   email: 'abbasov.adil.n@gmail.com',
   phone: '+994 55 209 26 64',
   linkedin: 'https://www.linkedin.com/in/adil-abbasov',
   github: 'https://github.com/adilAbbasov',
+  resume: '/resume/Adil-Abbasov-Backend-NET-Developer.pdf',
 }
 
 export const about =
-  'Full-Stack .NET Developer with hands-on experience delivering backend and frontend solutions for complex enterprise systems, including government-related Document Management platforms. Skilled in building robust APIs, data-driven services, and user-focused interfaces using modern .NET technologies. Strong problem-solving mindset, adaptable to new tools, and experienced in Agile environments with increasing responsibility and technical leadership. Currently pursuing a PhD in Computer Engineering while working in industry.'
+  "Backend-focused .NET Developer building large-scale and secure Document Management Systems for government organizations using C# and ASP.NET Core. Experienced in RESTful API and database design, event-driven integration through RabbitMQ and Kafka, and migrating legacy .NET Framework applications to modern .NET, with a strong focus on clean code, SOLID principles, automated testing and production stability. Leads core modules, owns key technical decisions and mentors developers. Brings full-stack experience with Angular, React and Next.js, communicates effectively with technical and business teams, and approaches work with ownership and attention to detail. Currently pursuing a PhD in Computer Engineering alongside industry work."
 
 export const aboutStats = [
   { label: 'Years Experience', value: '3+' },
@@ -27,12 +28,16 @@ export const experience = [
     period: 'Oct 2024 – Present',
     location: 'Baku, Azerbaijan',
     bullets: [
-      'Developed and maintained a large-scale enterprise Document Management System across .NET backend and Angular/React frontend for secure, high-availability solutions.',
-      'Implemented RESTful APIs using ASP.NET Core, including complex business logic, authentication/authorization, and external integrations.',
-      'Built responsive, accessible UI using HTML, CSS, JavaScript and modern frontend frameworks for multiple user roles.',
-      'Optimized data access using Entity Framework Core and Dapper; worked with Oracle, MongoDB, and Redis.',
-      'Led core modules end-to-end (requirements → implementation → deployment) following clean architecture and SOLID principles.',
-      'Collaborated with PM/Design/QA/Stakeholders; contributed to Agile ceremonies and improved team standards via mentoring and leadership.',
+      "Build and maintain the large-scale government Document Management System and its integrated applications, developing secure, high-availability backend services in C# and ASP.NET Core.",
+      "Design REST APIs for complex document workflows and business rules, with consistent request validation, centralized error handling and OpenAPI documentation.",
+      "Implement authentication and role-based authorization through OAuth2 and JWT, ensuring users access only the documents and actions permitted for their role.",
+      "Optimize queries, PL/SQL procedures and data access on Oracle with Entity Framework Core and Dapper, designing efficient schemas and caching frequently used data in Redis to reduce load.",
+      "Integrate the system with third-party services, deliver real-time notifications via SignalR and run scheduled background jobs with Hangfire.",
+      "Migrate legacy applications from the .NET Framework and earlier .NET versions to modern .NET, replacing NHibernate with Entity Framework Core to improve performance and maintainability.",
+      "Cover business logic with unit and integration tests to catch regressions early, and ship services through Docker-based GitLab CI/CD pipelines for reliable releases.",
+      "Use Claude Code for AI-assisted development to accelerate implementation, refactoring, testing and debugging, reviewing generated code for correctness, security and maintainability.",
+      "Investigate and resolve production incidents and performance bottlenecks, relying on centralized logging with Serilog, Elasticsearch and Kibana to trace root causes.",
+      "Lead core modules from requirements to production using Clean Architecture and CQRS, owning technical decisions and documentation, mentoring developers through code reviews and aligning API contracts with frontend and DevOps teams in Agile sprints.",
     ],
   },
   {
@@ -42,78 +47,33 @@ export const experience = [
     period: 'Jan 2024 – Oct 2024',
     location: 'Baku, Azerbaijan',
     bullets: [
-      'Contributed to backend development for a government Document Management platform with focus on reliability and security.',
-      'Developed API services with ASP.NET Core, including validation, secure authentication, and external integrations.',
-      'Worked with microservices and event-driven architecture using RabbitMQ and Kafka for async processing and decoupling.',
-      'Implemented data access with Entity Framework Core; worked with SQL Server, PostgreSQL, and Redis.',
-      'Supported services for document lifecycle, role-based permissions, workflows, and audit tracking.',
-      'Participated in code reviews, CI/CD, and production deployments; grew into an independent contributor with increased ownership.',
+      "Developed and enhanced backend services for the government Document Management System, covering document lifecycle, role-based permissions, workflow orchestration and audit tracking.",
+      "Implemented business logic and REST API endpoints in ASP.NET Core, including data validation, authentication and integrations with external systems.",
+      "Contributed to a microservices, event-driven architecture, using RabbitMQ and Kafka to achieve asynchronous processing and loose coupling between services.",
+      "Designed database schemas, built data access layers and migrated data across SQL Server and PostgreSQL using Entity Framework Core, with Redis caching to speed up frequent reads.",
+      "Wrote unit tests with NUnit to validate business logic and took part in code reviews, CI/CD-based releases and production support.",
+      "Collaborated with senior engineers, QA and stakeholders in cross-functional teams, growing into an independent contributor who owned backend features from design to release.",
     ],
   },
 ]
 
-export const projects = [
-  {
-    id: 'edms',
-    title: 'Enterprise Document Management System',
-    company: 'Agile Solutions Azerbaijan',
-    description:
-      '',
-    tags: ['.NET', 'ASP.NET Core', 'Angular', 'React', 'Oracle', 'MongoDB', 'Redis', 'Clean Architecture', 'EF Core', 'Dapper', 'JWT'],
-    highlights: [
-      'A Document Management System built for a large enterprise, covering document creation, versioning, approval workflows, archiving, and secure deletion across multiple departments.',
-      'Worked across both backend and frontend — built .NET APIs on the server side and developed responsive interfaces in Angular and React for different user roles within the organization.',
-      'Designed RESTful APIs with JWT and refresh-token authentication, covering complex business logic, role-based authorization rules, and secure integrations with multiple external services.',
-      'Combined Oracle, MongoDB, and Redis in the data layer — Oracle for structured relational data, MongoDB for flexible document metadata, and Redis for caching frequently accessed data to keep response times fast under load.',
-      'Took full ownership of key modules from requirements through to production, and contributed to team standards through code reviews, Agile ceremonies, and mentoring.',
-    ],
-    githubUrl: null,
-    liveUrl: null,
-  },
-  {
-    id: 'gdms',
-    title: 'Government Document Management Platform',
-    company: 'MinA',
-    description:
-      '',
-    tags: ['Microservices', 'ASP.NET Core', 'RabbitMQ', 'Kafka', 'SQL Server', 'PostgreSQL', 'EF Core', 'Dapper', 'Redis', 'CI/CD'],
-    highlights: [
-      'A Document Management Platform built for a government agency from the ground up, handling official workflows, cross-department communication, and regulatory compliance.',
-      'Designed and built an event-driven microservices architecture with RabbitMQ and Kafka, where each service runs and deploys independently, keeping the system stable even when individual parts fail.',
-      'Developed backend services covering document submission, routing, role-based permissions, and multi-step approval workflows, with input validation and secure authentication handled at every entry point.',
-      'Ensured all activity across the system is logged and traceable through a dedicated audit stream, meeting the strict compliance standards required by the government agency.',
-      'Actively contributed to CI/CD pipelines, participated in code reviews, handled production deployments, and steadily grew into a more independent contributor with greater ownership over time.',
-    ],
-    githubUrl: null,
-    liveUrl: null,
-  },
-]
+// Projects section is hidden until a public project (GitHub + live demo) is ready.
+export const projects = []
 
+// Mirrors the resume's 12 skill lines: the first 6 form the left column, the last 6 the right.
 export const skills = [
-  {
-    category: 'Backend',
-    items: ['C#', '.NET / ASP.NET Core', 'Web API', 'WPF', 'EF Core', 'Dapper'],
-  },
-  {
-    category: 'Architecture & Patterns',
-    items: ['Clean Architecture', 'DDD', 'Microservices', 'Event-Driven Architecture', 'SOLID', 'Design Patterns', 'OOP'],
-  },
-  {
-    category: 'Messaging & Integration',
-    items: ['RabbitMQ', 'Kafka', 'REST', 'SOAP'],
-  },
-  {
-    category: 'Databases',
-    items: ['SQL Server', 'PostgreSQL', 'Oracle', 'MongoDB', 'Redis'],
-  },
-  {
-    category: 'Frontend',
-    items: ['HTML', 'CSS', 'JavaScript', 'Angular', 'React.js'],
-  },
-  {
-    category: 'DevOps & Workflow',
-    items: ['CI/CD', 'Git', 'Agile (Scrum/Kanban)'],
-  },
+  { category: "Core", items: ["C#", ".NET", "ASP.NET Core", ".NET Framework"] },
+  { category: "Architecture", items: ["Microservices", "Clean Architecture", "CQRS", "MediatR"] },
+  { category: "Databases", items: ["SQL Server", "PostgreSQL", "Oracle", "MongoDB", "Redis"] },
+  { category: "Data Access", items: ["Entity Framework Core", "Dapper", "NHibernate"] },
+  { category: "Security", items: ["OAuth2", "JWT", "ASP.NET Core Identity"] },
+  { category: "Messaging", items: ["Event-Driven Architecture", "RabbitMQ", "Kafka"] },
+  { category: "APIs", items: ["RESTful APIs", "SignalR"] },
+  { category: "Testing", items: ["xUnit", "NUnit", "Moq"] },
+  { category: "DevOps", items: ["Git", "Docker", "GitLab CI/CD"] },
+  { category: "Background Jobs", items: ["Hangfire", "Quartz.NET"] },
+  { category: "Observability", items: ["Serilog", "Elasticsearch", "Kibana"] },
+  { category: "Frontend", items: ["Angular", "React", "Next.js"] },
 ]
 
 export const education = [
@@ -127,13 +87,13 @@ export const education = [
   {
     id: 'msc',
     degree: 'MSc, Artificial Intelligence',
-    institution: 'Azerbaijan State Oil And Industry University',
+    institution: 'Azerbaijan State Oil and Industry University',
     period: 'Jun 2025',
     location: 'Baku, Azerbaijan',
   },
   {
     id: 'step',
-    degree: 'Secondary Education, Software Development',
+    degree: 'Diploma, Software Development',
     institution: 'STEP IT Academy',
     period: 'Dec 2023',
     location: 'Baku, Azerbaijan',
@@ -141,7 +101,7 @@ export const education = [
   {
     id: 'bsc',
     degree: 'BSc, Computer Engineering',
-    institution: 'Azerbaijan State Oil And Industry University',
+    institution: 'Azerbaijan State Oil and Industry University',
     period: 'Jun 2023',
     location: 'Baku, Azerbaijan',
   },
@@ -186,8 +146,8 @@ export const certifications = [
 ]
 
 export const languages = [
-  { name: 'Azerbaijani', level: 'C2 — Native', percent: 100 },
-  { name: 'Turkish', level: 'C1 — Proficient', percent: 85 },
-  { name: 'English', level: 'B2 — Upper Intermediate', percent: 70 },
-  { name: 'Russian', level: 'B1 — Intermediate', percent: 55 },
+  { name: 'Azerbaijani', level: 'Native', percent: 100 },
+  { name: 'Turkish', level: 'Fluent', percent: 90 },
+  { name: 'English', level: 'C1 — Advanced', percent: 80 },
+  { name: 'Russian', level: 'B2 — Upper Intermediate', percent: 65 },
 ]

@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { MapPin, Mail } from 'lucide-react'
+import { MapPin, Mail, Download } from 'lucide-react'
 import { personal } from '@/data/portfolio'
 
 function scrollTo(id: string) {
@@ -21,11 +21,11 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center px-4 pt-16 overflow-hidden"
+      className="relative min-h-screen min-h-svh flex flex-col justify-center px-4 pt-16 pb-20 overflow-hidden"
     >
       {/* Animated background blobs */}
       <motion.div
-        className="absolute top-1/4 left-1/3 w-96 h-96 rounded-full bg-blue-500/8 blur-3xl pointer-events-none"
+        className="absolute top-1/4 left-1/3 w-96 h-96 rounded-full bg-blue-500/10 blur-3xl pointer-events-none"
         animate={{ scale: [1, 1.15, 1], opacity: [0.3, 0.5, 0.3] }}
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
       />
@@ -75,6 +75,14 @@ export default function Hero() {
           >
             View Experience
           </button>
+          <a
+            href={personal.resume}
+            download
+            className="inline-flex items-center gap-2 border border-blue-400/40 hover:border-blue-400 text-blue-300 hover:text-white font-medium px-6 py-2.5 rounded-lg transition-colors text-sm"
+          >
+            <Download size={15} />
+            Download Resume
+          </a>
           <button
             onClick={() => scrollTo('contact')}
             className="border border-white/20 hover:border-blue-400/60 text-slate-300 hover:text-white font-medium px-6 py-2.5 rounded-lg transition-colors text-sm"
@@ -84,10 +92,11 @@ export default function Hero() {
         </motion.div>
 
         {/* Social links */}
-        <motion.div {...fadeUp(0.5)} className="flex items-center gap-4">
+        {/* p-2 makes 34px tap targets with the same 16px visual spacing as before; -ml-2 keeps the first icon aligned */}
+        <motion.div {...fadeUp(0.5)} className="flex items-center -ml-2 [&>a]:p-2">
           <a
             href={`mailto:${personal.email}`}
-            className="text-slate-500 hover:text-blue-400 transition-colors"
+            className="text-slate-400 hover:text-blue-400 transition-colors"
             aria-label="Email"
           >
             <Mail size={18} />
@@ -96,7 +105,7 @@ export default function Hero() {
             href={personal.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-500 hover:text-blue-400 transition-colors"
+            className="text-slate-400 hover:text-blue-400 transition-colors"
             aria-label="GitHub"
           >
             <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
@@ -107,7 +116,7 @@ export default function Hero() {
             href={personal.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-500 hover:text-blue-400 transition-colors"
+            className="text-slate-400 hover:text-blue-400 transition-colors"
             aria-label="LinkedIn"
           >
             <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">

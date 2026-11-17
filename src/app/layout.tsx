@@ -1,19 +1,47 @@
 import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import MotionProvider from '@/components/ui/MotionProvider'
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800'],
+  variable: '--font-inter',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
-  title: 'Adil Abbasov — Full-Stack .NET Developer',
+  metadataBase: new URL('https://adilabbasov.com'),
+  title: 'Adil Abbasov — Backend .NET Developer',
   description:
-    'Portfolio of Adil Abbasov, Full-Stack .NET Developer based in Baku, Azerbaijan. Specializing in ASP.NET Core, microservices, and enterprise systems.',
-  keywords: ['.NET', 'ASP.NET Core', 'Full-Stack Developer', 'Baku', 'Azerbaijan', 'React', 'Angular'],
+    'Adil Abbasov is a Backend .NET Developer in Baku, Azerbaijan, building secure, large-scale systems with C#, ASP.NET Core, microservices and event-driven architecture.',
+  keywords: [
+    'Backend Developer',
+    '.NET Developer',
+    'C#',
+    'ASP.NET Core',
+    'Microservices',
+    'PostgreSQL',
+    'Oracle',
+    'RabbitMQ',
+    'Kafka',
+    'Baku',
+    'Azerbaijan',
+  ],
   authors: [{ name: 'Adil Abbasov' }],
+  alternates: { canonical: '/' },
   openGraph: {
-    title: 'Adil Abbasov — Full-Stack .NET Developer',
-    description: 'Portfolio of Adil Abbasov, Full-Stack .NET Developer',
+    title: 'Adil Abbasov — Backend .NET Developer',
+    description:
+      'Backend .NET Developer building secure, large-scale systems with C#, ASP.NET Core and modern .NET.',
+    url: 'https://adilabbasov.com',
+    siteName: 'Adil Abbasov',
+    locale: 'en_US',
     type: 'website',
   },
+  robots: { index: true, follow: true },
 }
 
 export default function RootLayout({
@@ -22,11 +50,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className={`scroll-smooth ${inter.variable}`}>
       <body className="bg-[#111827] text-white antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <MotionProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </MotionProvider>
       </body>
     </html>
   )

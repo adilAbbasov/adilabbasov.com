@@ -39,15 +39,15 @@ export default function TimelineItem({
       <div className={`pb-10 ${isLast ? 'pb-0' : ''}`}>
         <h3 className="text-white font-semibold text-base leading-tight">{title}</h3>
         <p className="text-blue-400 text-sm mt-0.5">{subtitle}</p>
-        <p className="text-slate-500 text-xs mt-1">
+        <p className="text-slate-400 text-xs mt-1">
           {period}
           {location && ` · ${location}`}
         </p>
         {bullets && bullets.length > 0 && (
-          <ul className="mt-3 space-y-1.5">
+          <ul className="mt-3 space-y-2 max-w-3xl">
             {bullets.map((b, i) => (
-              <li key={i} className="text-slate-300 text-sm flex gap-2">
-                <span className="text-blue-400 mt-1 flex-shrink-0">▸</span>
+              <li key={i} className="text-slate-300 text-sm leading-relaxed flex gap-2">
+                <span className="text-blue-400 flex-shrink-0">▸</span>
                 <span>{b}</span>
               </li>
             ))}

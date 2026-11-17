@@ -1,6 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <rect width="32" height="32" rx="7" fill="#111827"/>
-  <text x="16" y="16" text-anchor="middle" dominant-baseline="central" font-family="'Segoe UI', system-ui, sans-serif" font-weight="800" font-size="16">
-    <tspan fill="#60a5fa">.</tspan><tspan fill="white">AA</tspan>
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="337 33.85 863 863">
+  <defs>
+    <linearGradient id="fill" gradientUnits="userSpaceOnUse" x1="536.59" y1="429.27" x2="981.71" y2="785.37"><stop offset="0" stop-color="#00b0fe"/><stop offset="0.11" stop-color="#02a8fc"/><stop offset="0.25" stop-color="#0f94fd"/><stop offset="0.4" stop-color="#2279fd"/><stop offset="0.67" stop-color="#4350fb"/><stop offset="0.75" stop-color="#4b3afa"/><stop offset="1" stop-color="#651cfb"/></linearGradient>
+    <linearGradient id="shade" gradientUnits="userSpaceOnUse" x1="604.67" y1="634.64" x2="923.19" y2="400.21"><stop offset="0" stop-color="#0088f9"/><stop offset="0.09" stop-color="#017cf7"/><stop offset="0.17" stop-color="#0170f0"/><stop offset="0.2" stop-color="#0065e5"/><stop offset="0.24" stop-color="#005ee5"/><stop offset="0.27" stop-color="#0057d9"/><stop offset="0.31" stop-color="#024cce"/><stop offset="0.35" stop-color="#023baa"/><stop offset="0.42" stop-color="#011e5a"/><stop offset="0.44" stop-color="#001650"/><stop offset="0.7" stop-color="#001650" stop-opacity="1"/><stop offset="0.73" stop-color="#001b56" stop-opacity="1"/><stop offset="0.75" stop-color="#002165" stop-opacity="1"/><stop offset="0.78" stop-color="#022e88" stop-opacity="1"/><stop offset="0.8" stop-color="#023ca8" stop-opacity="1"/><stop offset="0.82" stop-color="#0346bf" stop-opacity="1"/><stop offset="0.85" stop-color="#024fd0" stop-opacity="1"/><stop offset="0.87" stop-color="#045ade" stop-opacity="1"/><stop offset="0.9" stop-color="#0a64ec" stop-opacity="0.9"/><stop offset="0.92" stop-color="#1168f0" stop-opacity="0.7"/><stop offset="0.95" stop-color="#176bf5" stop-opacity="0.45"/><stop offset="0.97" stop-color="#2370fa" stop-opacity="0.2"/><stop offset="1" stop-color="#2370fa" stop-opacity="0"/></linearGradient>
+    <clipPath id="c2clip"><path d="M581 644 L824.06 321.68 A87.9 87.9 0 0 1 965.42 323.02 L1198 644 L1105.34 644 A70 70 0 0 1 1048.44 614.78 L904.49 413.91 A16.56 16.56 0 0 0 877.6 413.86 L732.34 614.98 A70 70 0 0 1 675.6 644 L581 644 Z"/></clipPath>
+  </defs>
+  <path d="M581 644 L824.06 321.68 A87.9 87.9 0 0 1 965.42 323.02 L1198 644 L1105.34 644 A70 70 0 0 1 1048.44 614.78 L904.49 413.91 A16.56 16.56 0 0 0 877.6 413.86 L732.34 614.98 A70 70 0 0 1 675.6 644 L581 644 Z" fill="url(#fill)"/>
+  <path d="M568.5 250 H896 L889.5 660 H568.5 Z" fill="url(#shade)" clip-path="url(#c2clip)"/>
+  <path d="M339 644 L572.71 327.19 A94.85 94.85 0 0 1 725.61 327.52 L957 644 L863.4 644 A70 70 0 0 1 806.66 614.98 L661.39 413.85 A16.52 16.52 0 0 0 634.61 413.85 L489.34 614.98 A70 70 0 0 1 432.6 644 L339 644 Z" fill="url(#fill)"/>
 </svg>

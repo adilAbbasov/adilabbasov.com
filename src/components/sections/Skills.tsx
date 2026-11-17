@@ -21,10 +21,11 @@ export default function Skills() {
       <h2 className="section-heading">Skills</h2>
       <p className="section-sub">Technologies and tools I work with</p>
 
-      <div className="space-y-6 mt-6">
+      {/* Column-first flow keeps the resume order: groups 1–6 left, 7–12 right. */}
+      <div className="grid gap-y-5 md:grid-cols-2 md:grid-rows-6 md:grid-flow-col md:gap-x-10 mt-6">
         {skills.map((group) => (
           <div key={group.category}>
-            <p className="text-slate-500 text-xs uppercase tracking-widest mb-3">{group.category}</p>
+            <p className="text-slate-400 text-xs uppercase tracking-widest mb-2">{group.category}</p>
             <motion.div
               variants={container}
               initial="hidden"

@@ -29,7 +29,7 @@ export default function CertCard({ title, issuer, examCode, status }: CertCardPr
         <h4 className="text-white font-medium text-sm leading-snug">{title}</h4>
         <p className="text-blue-400 text-xs mt-1">{issuer}</p>
         {examCode && (
-          <p className="text-slate-500 text-xs mt-1 font-mono">{examCode}</p>
+          <p className="text-slate-400 text-xs mt-1 font-mono">{examCode}</p>
         )}
       </div>
     </div>
